@@ -1,0 +1,23 @@
+{% extends "layout.html" %} {% block body %}
+
+<div class="jumbotron text-center">
+  <h3>Bloğuma Hoşgeldiniz</h3>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam hendrerit,
+    justo nec feugiat auctor, nulla ante eleifend magna, id placerat libero
+    dolor et ligula. Aliquam nulla urna, malesuada et ligula eget, ultricies
+    cursus tellus. Duis sed ipsum quis dui faucibus efficitur. Pellentesque
+    finibus venenatis tellus sit amet sodales. Suspendisse maximus semper
+    turpis, non suscipit arcu aliquam vitae. Praesent metus leo, gravida nec
+    tincidunt ut, malesuada ultricies elit. Donec vitae leo sit amet felis
+    cursus bibendum. Fusce nisi sem, aliquam id ligula non, faucibus luctus
+    felis. Praesent pulvinar ipsum vitae tincidunt blandit. Mauris eu ex
+    molestie, convallis massa ut, ornare risus.
+  </p>
+</div>
+<p>
+  {% if request.user.is_authenticated %}
+  {% else %}
+  {% endif %}
+</p>
+{% endblock body %}
